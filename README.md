@@ -2,6 +2,8 @@
 
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
 
+[My solution](https://ricardothadeu.github.io/stats-preview-card/)
+
 The challenge is to build out this card component and get it looking as close to the design as possible.  
 
 
