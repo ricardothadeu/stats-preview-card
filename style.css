@@ -94,7 +94,7 @@ body {
     font-family: 'Lexend Deca';
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     body {
         width: 1440px;
         height: 100%;
