@@ -23,6 +23,7 @@ body {
 }
 
 .card {
+    position: relative;
     background-color: var(--card-background);
     width: 32.5rem;
     height: 78rem;
@@ -35,7 +36,17 @@ body {
 .card img { 
     content: url('images/image-header-mobile.jpg');
     width: 100%;
-    border-radius: 1rem 1rem 0 0;  
+    border-radius: 1rem 1rem 0 0;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    width: 32.5rem;
+    height: 24rem;
+    margin-inline: auto;
+    background-color: hsla(283, 92%, 22%, 0.55);
+    border-radius: 1rem 1rem 0 0;
 }
 
 .card h1 {
