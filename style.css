@@ -49,7 +49,7 @@ body {
     border-radius: 1rem 1rem 0 0;
 }
 
-.card h1 {
+.text-content h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     color: var(--main-heading-stats);
@@ -57,16 +57,23 @@ body {
     padding: 4.3rem 2rem 2rem 2rem;
 }
 
-.card h1 span {
+.text-content h1 span {
     color: var(--accent);
 }
 
-.card > p {
+.text-content > p {
     color:var(--main-paragraph);
     text-align: center;
     padding: 0 2.5rem 4.5rem 2.5rem;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: 400;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .stat {
@@ -85,4 +92,65 @@ body {
     color: var(--stats-heading);
     text-transform: uppercase;
     font-family: 'Lexend Deca';
+}
+
+@media (min-width: 1024px) {
+    body {
+        width: 1440px;
+        height: 100%;
+    }
+    .card {
+        height: 44.5rem;
+        width: 111rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .card img {
+        content: url('images/image-header-desktop.jpg');
+        width: 54rem;
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .image-overlay {
+        width: 54rem;
+        height: 44.5rem;
+        margin-inline: auto;
+        background-color: hsla(283, 92%, 22%, 0.55);
+        border-radius: 0 1rem 1rem 0;
+    }
+
+    .text-content > h1, .text-content > p {
+        padding: 0;
+        text-align: left;
+    }
+
+    .text-content {
+        padding-left: 7rem;
+        padding-right: 11.8rem;
+    }
+
+    .text-content h1 {
+        padding-top: 7.5rem;
+        padding-bottom: 2.5rem;
+        font-size: 3.6rem;
+    }
+
+    .text-content > p {
+        padding-bottom: 7.5rem;
+        line-height: 1.5;
+    }
+
+    .stats {
+        justify-content: space-between;
+        padding-right: 3rem;
+    }
+
+    .stat h2 {
+        text-align: start;
+    }
+
+    .stat p {
+        font-size: 1.3rem;
+    }
 }
